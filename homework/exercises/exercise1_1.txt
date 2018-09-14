@@ -17,4 +17,4 @@ A:
 
   A procedure is regular with respect to input/outputs iff ( input/outputs 
 before the procedure are equal iff the same input/outputs are equal after the 
-procedure)
+procedure )

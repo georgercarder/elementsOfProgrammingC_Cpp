@@ -1,4 +1,5 @@
-lemma 1.1 If a value type is uniquely represented, equality implies representational equality.
+lemma 1.1 If a value type is uniquely represented, equality implies 
+representational equality.
 
 Proof.
 

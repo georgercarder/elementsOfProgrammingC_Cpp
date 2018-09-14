@@ -1,4 +1,5 @@
-lemma 1.2 If a value type is not ambiguous, representational equality implies equality.
+lemma 1.2 If a value type is not ambiguous, representational equality implies 
+equality.
 
 Proof.
 

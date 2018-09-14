@@ -1,10 +1,10 @@
-**abstract entity** is an individual thing that is eternal and unchangeable
+**abstract entity** is an individual thing that is eternal and unchangeable.
 
-**concrete entity** is an individual thing that comes into and out of existence in space and time
+**concrete entity** is an individual thing that comes into and out of existence in space and time.
 
-**attribute** is a correspondence between a concrete entity and an abstract entity (describes some property, measurement, or quality of the concrete entity)
+**attribute** is a correspondence between a concrete entity and an abstract entity (describes some property, measurement, or quality of the concrete entity).
 
-**identity** determins the sameness of a thing changing over time (primitive notion of our perceptionof reality)
+**identity** determins the sameness of a thing changing over time (primitive notion of our perceptionof reality).
 
 **snapshot** (of a concrete entity) is a collection of its attributes at a particular point int time. Examples: Blue and 13 are abstract entities. Socrates and the USA are concrete entities.
 

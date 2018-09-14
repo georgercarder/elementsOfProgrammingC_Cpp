@@ -9,7 +9,7 @@ suppose u,v are representationally equal
 we show that u,v are equal by showing they represent the same entity
 
 u,v representationally equal implies
-  datum(u) = datum(v) where "=" means identical
+  datum(u) = datum(v) where "=" in this line means identical
 
 as values u:={datum(u), interpretation(u)} 
   where datum(u) ~ interpretationt(u) is a correspondence

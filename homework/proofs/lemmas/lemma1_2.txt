@@ -15,6 +15,7 @@ u,v representationally equal implies
 as values u:={datum(u), interpretation(u)} 
   where datum(u) ~ interpretationt(u) is a correspondence
   and interpretation(u) = E an entity
+  being that Type is unambiguous, the interpretation(u) = E is unique
   the same forms follow for v
 
 interpretation(v) ~ datum(v) = datum(u) ~ interpretation(u) = E

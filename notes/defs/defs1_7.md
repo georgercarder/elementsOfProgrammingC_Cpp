@@ -54,17 +54,12 @@ An **abstract procedure** is parameterized by types and constant values, with re
 
 Example of an abstract procedure:
 
-`template<typename Op>
-
+```template<typename Op>
   requires(BinaryOperation(Op))
-
 Domain(Op) square(const Domain(Op)& x, Op op)
-
 {
-
   return op(x, x);
-
-}`
+}```
 
 **Preconditions** describe properties of particular objects.
 

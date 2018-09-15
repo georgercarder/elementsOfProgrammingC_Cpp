@@ -32,7 +32,7 @@ Formally, we define concepts
 
   **C**(T_0,...,T_n-1) :=
 
-    E_0
+   E_0
 
   ^ E_1
 

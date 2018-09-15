@@ -32,13 +32,13 @@ Formally, we define concepts
 
   **C**(T_0,...,T_n-1) :=
 
-     E_0
+    E_0
 
-   ^ E_1
+  ^ E_1
 
-   ^ ...
+  ^ ...
 
-   ^ E_k-1
+  ^ E_k-1
 
 Where := is read as "is equal by definition", the T_i are formal type parameters, and E_i are concept clauses which take one of three forms.
 

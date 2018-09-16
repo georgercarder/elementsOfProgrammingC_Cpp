@@ -7,6 +7,6 @@ main.o: main.cpp square.h
 	g++ main.cpp -c -std=c++0x
 
 clean:
-	rm -f *o square
+	rm -f *.o square
 
 

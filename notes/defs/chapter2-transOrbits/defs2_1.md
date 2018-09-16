@@ -50,7 +50,7 @@ int abs(int x)
 
 ```
 template<typename D>
-D abs(int x)
+D abs(D x)
 {
   if (x < 0) return -x; else return x;
 }

@@ -14,10 +14,10 @@ int main(void)
  //orbit_structure_nonterminating_orbit
   
   
- /*uint64_t seed = 1234;
+ uint64_t seed = 1234;
   
   srand(seed);
   for(int i = 0; i < 500; i++)
-    printf(" %d \n", rand());*/
+    cout << rand() << endl;
   return 0;
 }

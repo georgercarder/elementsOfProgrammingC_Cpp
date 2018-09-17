@@ -1,3 +1,4 @@
+  
 template<typename F, typename P>
   requires(Transformation(F) && UnaryPredicate(P) && DomainF == DomainP)
 DomainF collision_point(const DomainF& x, F f, P p)

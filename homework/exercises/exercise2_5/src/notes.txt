@@ -1,0 +1,14 @@
+Av1 is 67596
+Av2 is 17775
+9997
+Av1 is 67590
+Av2 is 17775
+9998
+Av1 is 67595
+Av2 is 17775
+9999
+Av1 is 67591
+Av2 is 17775
+Av1 final is 67591
+Av2 final is 17775
+

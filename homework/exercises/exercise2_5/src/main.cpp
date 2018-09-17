@@ -25,7 +25,7 @@ int main(void)
 
   for(int i = 0; i < sampleSize; i++) {
     
-    seed ++;
+    seed += pseudorand(seed);
     
     cout << i << endl; 
 

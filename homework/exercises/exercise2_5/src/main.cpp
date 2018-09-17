@@ -16,14 +16,18 @@ int main(void)
   // find handle size and cycle size of rand
   //connection_point_nonterminating_orbit(); 
   
-  int sampleSize = 100;
+  
+  uint64_t seed = 37268402;
+  int sampleSize = 10000;
 
   int Tot1;
   int Tot2;
 
   for(int i = 0; i < sampleSize; i++) {
-    uint64_t seed = i;
-    cout << seed << endl; 
+    
+    seed ++;
+    
+    cout << i << endl; 
 
     typedef decltype(pseudorand) F; 
 

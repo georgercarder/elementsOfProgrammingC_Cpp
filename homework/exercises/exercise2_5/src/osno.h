@@ -13,10 +13,10 @@ orbit_structure_nonterminating_orbit(const DomainF& x, F f)
 
   DomainF y = connection_point_nonterminating_orbit<F, DomainF>(x,f);
   
-  cout << distance(x,y) << endl;
+  cout << distance<F>(x, y, f) << endl;
 
-  return std::tuple<N, N, DomainF>(distance(x, y),//, f),
-                                  distance(f(y), y),//, f),
+  return std::tuple<N, N, DomainF>(distance<F>(x, y, f),//, f),
+                                  distance<F>(f(y), y, f),//, f),
                                   y);
 
 }

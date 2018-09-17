@@ -8,12 +8,7 @@ using namespace std;
 
 #include "osno.h"
 
-int pseudorand(int p) {
-  
-  srand(p);
-
-  return rand();
-}
+//#include "pseudorand.h"
 
 int main(void)
 {

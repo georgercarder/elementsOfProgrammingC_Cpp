@@ -1,5 +1,5 @@
   
-template<typename F, typename P>
+template<typename F, typename P, typename DomainF>
   requires(Transformation(F) && UnaryPredicate(P) && DomainF == DomainP)
 DomainF collision_point(const DomainF& x, F f, P p)
 {

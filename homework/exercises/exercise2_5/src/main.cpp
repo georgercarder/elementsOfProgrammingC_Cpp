@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <iostream>
+#include <cmath>
 using namespace std;
 #include <tuple>
 
@@ -31,10 +32,10 @@ int main(void)
 
   orbit_structure_nonterminating_orbit<F, int, int>(seed, pseudorand);
 
- /*seed = pseudorand(seed);
+/* seed = pseudorand(seed);
  cout << seed << endl;
 
- for(int i = 0; i < 10; i++) {
+ for(int i = 0; i < 1000000; i++) {
    seed = pseudorand(seed);
    cout << seed << endl;
  }*/

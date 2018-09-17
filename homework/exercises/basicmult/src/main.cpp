@@ -1,26 +1,39 @@
-#include "square.h"
 #include <iostream>
+#include <functional>
+#include <type_traits>
+
 using namespace std;
 
-template<typename D>
-D mult(D a, D b) {
-  return a * b;
-}
-  
-template<typename Op,typename D>
+#define Domain(ftype) typename ftype::DomainType
+#define requires(...)
+
+template<typename Op>
   requires(BinaryOperation(Op))
- D square(const D& x, Op op)
+  Domain(Op) square(const Domain(Op)& x, Op op)
 {
-  return op(x, x);
+    return op(x, x);
 }
 
-int main() 
-{
-    
-  typedef decltype(mult<int>) Op;
-    cout << square<Op, int>(3, mult) << endl;
-  typedef decltype(mult<float>) Op2;
-    cout << square<Op2, float>(3.2, mult) << endl;
+template <typename T>
+struct BinaryOperation {
+  typedef T DomainType;
+  typedef T ReturnType;
+  typedef std::function<T(T,T)> FuncType;
+  FuncType fn;
+  ReturnType operator()(DomainType x, DomainType y) {
+    return fn(x,y);
+  };
+};
 
+int main()
+{
+  BinaryOperation<int> mult;
+  mult.fn = [](int a, int b) { return a * b; };
+
+  BinaryOperation<float> fmult;
+  fmult.fn = [](float a, float b) { return a * b; };
+
+  cout << square<BinaryOperation<int>>(2, mult) << endl
+       << square<BinaryOperation<float>>(3.2, fmult) << endl;
   return 0;
 }

@@ -8,10 +8,14 @@ std::tuple<DistanceTypeF, DistanceTypeF, DomainF>
 orbit_structure_nonterminating_orbit(const DomainF& x, F f)
 {
 
-  cout << "hello osno";
+//  cout << "hello osno";
   typedef DistanceTypeF N;
 
   DomainF y = connection_point_nonterminating_orbit<F, DomainF>(x,f);
+  
+  cout << y << endl
+       << x << endl;
+
   return std::tuple<N, N, DomainF>(distance(x, y),//, f),
                                   distance(f(y), y),//, f),
                                   y);

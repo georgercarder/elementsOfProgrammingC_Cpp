@@ -31,7 +31,6 @@ int main(void)
   //<typename F, typename DomainF, typename DistanceTypeF>
 
   orbit_structure_nonterminating_orbit<F, int, int>(seed, pseudorand);
-
 /* seed = pseudorand(seed);
  cout << seed << endl;
 

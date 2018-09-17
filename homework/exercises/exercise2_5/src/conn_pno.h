@@ -1,4 +1,5 @@
-#include "cp.h"
+//#include "cp.h"
+#include "conn_pt.h"
 #include "coll_pno.h" 
 
 template<typename F, typename DomainF>//<typename F>

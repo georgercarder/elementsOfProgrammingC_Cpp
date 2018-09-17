@@ -1,5 +1,5 @@
 
-template<typename F, template DomainF>
+template<typename F, typename DomainF>
   requires(Transformation(F))
 DomainF convergent_point(DomainF x0, DomainF x1, F f)
 {

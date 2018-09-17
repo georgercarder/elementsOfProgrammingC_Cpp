@@ -14,9 +14,10 @@ int distance(int x, int y, F f) {
 
   while ( _x != _y) {
     dist ++;
-    cout << dist << endl;
+    //cout << dist << endl;
     _x = f(_x);
   }
 
+ // cout << "distance " << dist << endl;
   return dist;
 }

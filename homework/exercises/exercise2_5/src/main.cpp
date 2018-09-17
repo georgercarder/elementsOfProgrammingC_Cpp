@@ -16,21 +16,26 @@ int main(void)
   // find handle size and cycle size of rand
   //connection_point_nonterminating_orbit(); 
   
-  
-  uint64_t seed = 123;
-  cout << seed << endl; 
+  int sampleSize = 100;
 
-  typedef decltype(pseudorand) F; 
+  int Tot1;
+  int Tot2;
 
-  orbit_structure_nonterminating_orbit<F, int, int>(seed, pseudorand);
-/* seed = pseudorand(seed);
- cout << seed << endl;
+  for(int i = 0; i < sampleSize; i++) {
+    uint64_t seed = i;
+    cout << seed << endl; 
 
- for(int i = 0; i < 1000000; i++) {
-   seed = pseudorand(seed);
-   cout << seed << endl;
- }*/
+    typedef decltype(pseudorand) F; 
 
+    std::tuple<int, int, int> out = orbit_structure_nonterminating_orbit<F, int, int>(seed, pseudorand);
+    Tot1 = (get<0>(out) + Tot1);
+    cout << "Av1 is " << Tot1 / (i + 1) << endl;
+    Tot2 = (get<1>(out) + Tot2);
+    cout << "Av2 is " << Tot2 / (i + 1)<< endl;
+  }
+
+  cout << "Av1 final is " << Tot1 / sampleSize << endl;
+  cout << "Av2 final is " << Tot2 / sampleSize << endl;
 
   return 0;
 }

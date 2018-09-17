@@ -8,7 +8,7 @@ using namespace std;
 
 #include "osno.h"
 
-//#include "pseudorand.h"
+#include "pseudorand.h"
 
 int main(void)
 {

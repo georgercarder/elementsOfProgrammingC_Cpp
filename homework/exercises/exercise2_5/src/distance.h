@@ -1,4 +1,4 @@
-#include "pseudorand.h"
+//#include "pseudorand.h"
 
 // need to redefine distance as n for f^n(x) = y
 template<typename F>
@@ -14,7 +14,8 @@ int distance(int x, int y, F f) {
 
   while ( _x != _y) {
     dist ++;
-    _x = pseudorand(x);
+    cout << dist << endl;
+    _x = f(x);
   }
 
   return dist;
